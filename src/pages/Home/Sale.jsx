@@ -10,7 +10,7 @@ import { SearchContext } from '../../context/SearchContext'
 const Sale = () => {
   const navigate = useNavigate();
   //Fetch featured hotel data && limit =3 (chỉ gọi đúng 3 giá trị)
-  const {data,loading,error} = useFetch("/hotels?featured=true&limit=3");
+  const {data,loading,error} = useFetch("https://wanderest-api.onrender.com/api/hotels?featured=true&limit=3");
   const [destination, setDestination] = useState("");
   const [dates, setDates] = useState([
     {

@@ -20,7 +20,7 @@ const Register = () => {
   const handleSubmit = async(e)=>{
     e.preventDefault();
     try{
-      await axios.post("/auth/register",info)
+      await axios.post("https://wanderest-api.onrender.com/api/auth/register",info)
       .then((respone)=>{
         toast.success(respone.data, {position:'top-right'});
         navigate("/login");

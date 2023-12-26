@@ -13,7 +13,7 @@ const Reserve = ({ setOpen, hotelId, hotelName, hotelAddress, hotelCity, userId,
   // Biến xử lý id khi chọn phòng
   const [selectedRooms, setSelectedRooms] = useState([]);
   // Fetch data về tất cả phòng trong 1 hotel
-  const {data,loading,error} = useFetch(`/hotels/room/${hotelId}`)
+  const {data,loading,error} = useFetch(`https://wanderest-api.onrender.com/api/hotels/room/${hotelId}`)
   // xử dụng SearchContext để lấy dữ liệu truyền từ trang chủ vào
   const {dates,options} = useContext(SearchContext);
   // Object sẽ được đẩy vào reservation database
@@ -74,7 +74,7 @@ const Reserve = ({ setOpen, hotelId, hotelName, hotelAddress, hotelCity, userId,
     try{
      // Thực hiện post ngày vào từng id của room đã chọn
       await Promise.all(selectedRooms.map(roomId=>{
-        const res = axios.put(`/rooms/availability/${roomId}`
+        const res = axios.put(`https://wanderest-api.onrender.com/api/rooms/availability/${roomId}`
         ,{dates:allDates});
     //    return res.data;
       }))
@@ -83,7 +83,7 @@ const Reserve = ({ setOpen, hotelId, hotelName, hotelAddress, hotelCity, userId,
         roomNumbers: rooms,
         price: totalPrice
       }
-      await axios.post(`/reservations/${userId}`, newReserv)
+      await axios.post(`https://wanderest-api.onrender.com/api/reservations/${userId}`, newReserv)
       .then((respone)=>{
         toast.success(respone.data, {position:'top-right'});
         navigate("/");

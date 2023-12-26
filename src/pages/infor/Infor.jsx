@@ -9,7 +9,7 @@ const Infor = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [file,setFile] = useState();
-  const {data, loading, error} = useFetch(`/users/${id}`);
+  const {data, loading, error} = useFetch(`https://wanderest-api.onrender.com/api/users/${id}`);
   const [user, setUser] = useState({});
   // Kiểm tra user đã có ảnh hay chưa
   const [img,setImg] = useState();
@@ -39,7 +39,7 @@ const Infor = () => {
         ...user,
         img:url
       }
-      await axios.put(`/users/${id}`, newUser);
+      await axios.put(`https://wanderest-api.onrender.com/api/users/${id}`, newUser);
       navigate("/");
     }
     catch(err)

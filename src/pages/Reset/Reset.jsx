@@ -17,7 +17,7 @@ const Reset = () => {
   }
   const handleSubmit = async(e)=>{
     try{
-      await axios.post("/auth/reset",email)
+      await axios.post("https://wanderest-api.onrender.com/api/auth/reset",email)
       .then((respone)=>{
         toast.success(respone.data, {position:'top-right'});
       })

@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom'
 import { format} from 'date-fns'  
 const MyBooking = () => {
   const {id} = useParams();
-  const {data, loading, error} = useFetch(`/users/reservations/${id}`);
+  const {data, loading, error} = useFetch(`https://wanderest-api.onrender.com/api/users/reservations/${id}`);
   console.log(data);
   return (
     <div className='mybooking-page'>

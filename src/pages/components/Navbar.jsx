@@ -25,7 +25,7 @@ const Navbar = () => {
   const handleSignOut = async ()=>{
     dispatch({type:"LOGOUT"}); // Thực hiện action là LOGOUT
     setIsDrop(false);
-    await axios.get("/auth/logout"); // call api để xóa access_token ra khỏi cookie
+    await axios.get("https://wanderest-api.onrender.com/api/auth/logout"); // call api để xóa access_token ra khỏi cookie
     navigate("/"); // Điều hướng đến trang chủ
   }
   // END

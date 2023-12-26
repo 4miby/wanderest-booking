@@ -12,7 +12,7 @@ const Explore = () => {
   const navigate = useNavigate();
   const [destination,setDestination] = useState("");
   // Lấy dữ liệu số lượng dịch vụ ở các thành phố
-  const {data,loading, error} = useFetch("/hotels/countbycity?cities=HaNoi,HCM,DaNang,NhaTrang,DaLat");
+  const {data,loading, error} = useFetch("https://wanderest-api.onrender.com/api/hotels/countbycity?cities=HaNoi,HCM,DaNang,NhaTrang,DaLat");
   
   const [dates, setDates] = useState([
     {

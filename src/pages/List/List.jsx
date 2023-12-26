@@ -15,7 +15,7 @@ const List = () => {
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
   // Fetch Data
-  const {data,loading, error,reFetch} = useFetch(`/hotels?city=${destination}&min=${min||0 }&max=${max || 10000000}`);
+  const {data,loading, error,reFetch} = useFetch(`https://wanderest-api.onrender.com/api/hotels?city=${destination}&min=${min||0 }&max=${max || 10000000}`);
   //Xử lý nút tìm kiếm
   const handleClick = ()=>{
     reFetch();

@@ -35,7 +35,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try{
       // post data để yêu cầu reset pass
-      await axios.post("/auth/resetPassword",info)
+      await axios.post("https://wanderest-api.onrender.com/api/auth/resetPassword",info)
       .then((respone)=>{
         toast.success(respone.data, {position:'top-right'});
         navigate("/login");
