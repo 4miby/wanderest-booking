@@ -1,0 +1,68 @@
+.sale-container{
+  padding: 0 120px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+.sale-container p{
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.sale-description{
+  color: #5e5e5e;
+}
+.sale-room-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+.roomTitleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.roomTitleContainer>h2{
+  margin: 0px;
+}
+.roomTitleContainer>p{
+  margin: 10px 0px;
+  color: #5e5e5e;
+}
+.sale-room{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 42px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sale-room img{
+  width: 360px;
+  height: 260px;
+  border: 1px solid;
+  border-radius: 24px;
+}
+.room-info{
+  display: flex;
+  justify-content: space-between;
+}
+.rating{
+  background-color: #003580;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+.address-container{
+  display: flex;
+  gap: 10px;
+  padding: 20px 0px;
+}
+.address-container>p{
+  margin: 0px;
+}
+.price{
+  font-size: 24px;
+  font-weight: bold;
+}

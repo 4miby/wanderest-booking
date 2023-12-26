@@ -1,0 +1,36 @@
+.explore-container{
+  padding: 0 120px;
+}
+.row-image{
+  display: flex;
+  column-gap: 30px;
+}
+.column-image{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.explore-container img{
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.explore-container img:hover{
+  opacity: 0.9;
+}
+.exploreItem{
+  position: relative;
+}
+.exploreItem>h1{
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: white;
+  text-shadow: rgb(26, 26, 26) 1px 1px 1px;
+}
+.exploreItem>h2{
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  text-shadow: rgb(26, 26, 26) 1px 1px 1px;
+}

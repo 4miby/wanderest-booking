@@ -1,0 +1,72 @@
+.register-page{
+  display: flex;
+}
+.backgroundSlider{
+  flex: 1;
+}
+.registerContainer{
+  flex: 1;
+  background-color: #eaedef;
+}
+.registerContainer>img{
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+}
+.registerInfoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registerInfoContainer>h1{
+  font-family: 'Inika', serif;
+  word-wrap: break-word;
+  font-weight: bold;
+  width: 106px;
+  text-align: center;
+  text-shadow: 2px 4px 4px rgb(127, 126, 126);
+  line-height: 30px;
+}
+.registerInfo{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  margin-top: 20px;
+}
+.registerInfo>label{
+  font-size: 14px;
+  font-weight: bold;
+}
+.registerInfo>input{
+  padding: 10px;
+  width: 350px;
+  border: 1px solid #9f9f9f;
+  border-radius: 6px;
+}
+.registerInfo>button{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #65AEF2;
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  cursor: pointer;
+}
+.LinktoLogin{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.LinktoServices{
+  display: flex;
+  gap: 50px;
+}
+.LinktoServices>a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
